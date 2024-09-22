@@ -1,0 +1,291 @@
+html body{
+    background-color: rgb(226, 189, 195);
+    margin:0;
+    padding:0;
+}
+
+/*Fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+#principal{
+    width:100%;
+    height:700px;
+    background-image: url("images/fondo-principal-2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#titulo-1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 900%;
+    font-weight:bold;
+    color:white;
+    text-shadow: 1px 2px 3px black;
+    margin-top:6%;
+}
+
+#titulo-2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 600%;
+    font-weight:bold;
+    color:white;
+    text-shadow: 1px 2px 3px black;
+}
+
+#countdown{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100%;
+    font-weight:bold;
+    color:white;
+    text-shadow: 1px 2px 3px black;
+}
+
+.titulos{
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    font-weight:700;
+}
+
+.titulos-delgados{
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+}
+
+#segunda{
+    width:100%;
+    height:auto;
+    background-image: url("images/fondo-segunda-2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    padding:8%;
+}
+
+#imagen-festejada{
+    width:20%;
+    border-radius:50%;
+    border:30px solid rgba(255, 255, 255, 0.878);
+    box-shadow:1px 1px 20px white;
+}
+
+#frase{
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
+    font-weight:bold;
+    color:white;
+    text-shadow: 1px 2px 3px black;
+}
+
+
+#tercera{
+    width:100%;
+    height:700px;
+    padding:2%;
+    background-attachment: fixed;
+}
+
+.card{
+    width:30%;
+    display:inline-block;
+    float:left;
+    margin-left:2%;
+    margin-top:2%;
+}
+
+.botones{
+    background-color:rgb(229, 84, 108);
+    border:1px solid rgb(241, 128, 147);
+    text-align: center;
+    padding:2.5%;
+    border-radius:10px;
+    color:white;
+}
+
+a{
+    color:black;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#cuarta{
+    width:100%;
+    height:auto;
+    padding:2%;
+    background-color: rgb(235, 235, 235);
+    background-attachment: fixed;
+}
+
+#quinta{
+    width:100%;
+    height:auto;
+    padding:2%;
+    background-image: url("images/fondo-asistencia-3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    color:white;
+}
+
+.imagenes-vestimenta{
+    width:20%;
+    border-radius:50%;
+}
+
+#sexta{
+    width:100%;
+    height:400px;
+    padding:2%;
+    background-color: rgb(246, 246, 246);
+}
+
+.imagenes-tiendas{
+    width:20%;
+}
+
+#septima{
+    width:100%;
+    height:400px;
+    padding:2%;
+    background-image:url("images/copas.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#septima p{
+    color:white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#septima button:hover{
+    border:1px solid rgb(229, 84, 108);
+    background-color:rgb(210, 57, 83);
+}
+
+.whats-confirmacion{
+    width:12%;
+    margin-right:4%;
+}
+
+#itinerarioModal{
+    background-image: url("images/fondo-asistencia-2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+thead{
+    color:white;
+    background-color:rgb(216, 77, 100);
+}
+
+.celdasRosas{
+    background-color:rgb(249, 208, 215);
+}
+
+
+#botonIniciar{
+    background-color: rgb(235, 83, 109);
+    color:white;
+}
+
+#botonDetener{
+    border: 1px solid white;
+    color:white;
+    box-shadow:none;
+}
+
+#botonReanudar{
+    border: 1px solid white;
+    color:white;
+    display:none;
+    box-shadow:none;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #principal{
+        background-image: url("images/fondo-principal-movil.jpg");
+        background-size: 100%;
+    }
+
+    #titulo-1{
+        font-size: 500%;
+        margin-top:6%;
+    }
+    
+    #titulo-2{
+        font-size: 350%;
+    }
+
+    #countdown{
+        margin-top:10%;
+        font-size: 50%;
+    }
+
+    #segunda{
+        background-image: url("images/fondo-segunda-movil.jpg");
+    }
+
+    #imagen-festejada{
+        width:95%;
+        border-radius:50%;
+        border:25px solid rgba(255, 255, 255, 0.878);
+        box-shadow:1px 1px 20px white;
+    }
+
+    #frase{
+        font-size:300%;
+    }
+
+    #tercera{
+        height:auto;
+        padding:4%;
+    }
+
+    #quinta{
+        background-image: url("images/fondo-asistencia-4.jpg");
+    }
+
+    .card{
+        width:90%;
+        display:block;
+        float:none;
+        margin-left:0%;
+        margin-top:4%;
+    }
+
+    .imagenes-vestimenta {
+        width: 40%;
+    }
+
+    #sexta {
+        height: auto;
+        padding:4%;
+    }
+
+    .imagenes-tiendas {
+        width: 60%;
+    }
+
+    #septima {
+        height: auto;
+        background-image: url(images/copas-3.jpg);
+        background-size: 200%;
+        padding:4%;
+    }
+
+    .botones {
+        margin-top:3%;
+    }
+  }

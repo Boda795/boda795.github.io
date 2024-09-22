@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css"/>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Mis XV años</title>
+</head>
+<body>
+    <section id="principal">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Invitación</h1>
+                        </div>
+                        <div class="modal-body">
+                            <center>
+                                <h1>¡Bienvenidos!</h1> 
+                                <br/> 
+                                <h5>Toca el botón para ver la invitación</h5>
+                                <br/>
+                                <button class="btn" id="botonIniciar" data-bs-dismiss="modal">Ver invitación</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
+            <!-- Audio -->
+            <audio src=""></audio>
+            <br/>
+            <center>
+                <p id="titulo-1">Mis XV años</p>
+                <p id="titulo-2">Lupis García</p>
+                <br/>
+                <div style="font-size: 55px;text-align: center; margin: 30px auto; width: 80%;">
+                     <!-- Contador regresivo -->
+                    <section id="countdown">
+                        <p>
+                            <span id="days">20</span> días / <span id="hours">3</span> horas / <span id="minutes">4</span> minutos / <span id="seconds">10</span> segundos
+                        </p>
+                    </section> 
+                    <!-- Fin contador regresivo -->
+                </div>
+            </center>
+    </section>
+
+    <section id="segunda">
+        <center>
+            <img src="images/chica.jpg" id="imagen-festejada"/>
+            <p id="frase">Porque los momentos más importantes, merecen ser compartidos.</p>
+        </center>
+    </section>
+
+    <section id="tercera">
+        <center>
+            <p class="titulos">¿Dónde y Cuándo?</p>
+
+            <!--Start card-->
+            <div class="card">
+                <img src="images/ceremonia-religiosa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ceremonia religiosa</h5>
+                <p class="card-text"><strong>Fecha y hora: </strong> 03 de noviembre del 2023 a las 5:00 PM</p>
+                <p class="card-text"><strong>Lugar: </strong> Lopez Hidalgo #65 Colonia Centro.</p>
+                <button class="botones" data-bs-toggle="modal" data-bs-target="#ceremoniaModal">Ver mapá GPS</button>
+                </div>
+            </div>
+            <!--Finish card-->
+  
+            <!-- Modal -->
+            <div class="modal fade" id="ceremoniaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ceremonia religiosa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!--Google Maps-->
+                        <br/>
+                        <p><strong>Domicilio: </strong>Lopez Hidalgo #65 Colonia Centro.</p>
+                        <p><strong>Pistas para llegar: </strong> El templo se encuentra en el centro del centro podrás ubicarlo porque tiene variedad de estatuas en su exterior. </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="botones" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
+            <!--Start card-->
+            <div class="card">
+                <img src="images/salon-fiesta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Fiesta</h5>
+                <p class="card-text"><strong>Fecha y hora: </strong> 03 de noviembre del 2023 a las 7:30 PM</p>
+                <p class="card-text"><strong>Lugar: </strong> Calle Ignacio Corona #456, colonia Centro.</p>
+                <button class="botones" data-bs-toggle="modal" data-bs-target="#fiestaModal">Ver mapá GPS</button>
+                </div>
+            </div>
+            <!--Finish card-->
+
+             <!-- Modal -->
+             <div class="modal fade" id="fiestaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fiesta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!--Google Maps-->
+                        <br/>
+                        <p><strong>Domicilio: </strong>Calle Ignacio Corona #456, colonia Centro. </p>
+                        <p><strong>Pistas para llegar: </strong>El salón de fiestas se encuentra en la esquina del Oxxo contitución, su fachada es color naranja y se llama "Salón Naranjos". </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="botones" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
+            <!--Start card-->
+            <div class="card">
+                <img src="images/fondo-segunda.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Itinerario</h5>
+                <button class="botones" data-bs-toggle="modal" data-bs-target="#itinerarioModal">Ver Itinerario</button>
+                </div>
+            </div>
+            <!--Finish card-->
+
+            <!-- Modal -->
+            <div class="modal fade" id="itinerarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ITINERARIO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                            <h1>ITINERARIO</h1>
+                            <br/>
+                            <h4>XV años, Lupis Garcia</h4>
+                            <br/>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Órden</th>
+                                    <th scope="col">Evento</th>
+                                    <th scope="col">Hora</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Misa</td>
+                                    <td>7:00 pm</td>
+                                  </tr>
+                                  <tr class="celdasRosas">
+                                    <th scope="row">2</th>
+                                    <td>Recepción</td>
+                                    <td>8:30 pm</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Cena</td>
+                                    <td>9:00 pm</td>
+                                  </tr>
+                                  <tr class="celdasRosas">
+                                    <th scope="row">4</th>
+                                    <td>Baile</td>
+                                    <td>10:00 pm</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>Brindis</td>
+                                    <td>12:00 am</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="botones" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
+        </center>
+
+    </section>
+
+    <section id="cuarta">
+        <center>
+            <p class="titulos-delgados"><strong>Código de vestimenta: </strong> Formal</p>
+            <br/>
+            <img src="images/vestimenta-hombre.jpg" class="imagenes-vestimenta"/>
+            <br/><br/>
+            <p><strong>Hombres: </strong> Traje y Corbata</p>
+            <br/><br/>
+            <img src="images/vestimenta-mujer.jpg" class="imagenes-vestimenta"/>
+            <br/><br/>
+            <p><strong>Mujeres: </strong> Vestido largo</p>
+        </center>
+    </section>
+
+    <section id="quinta">
+        <center>
+            <p class="titulos"><strong>Personas muy importantes para mí: </strong></p>
+            <br/>
+            <img src="images/hombre.jpg" class="imagenes-vestimenta"/>
+            <br/><br/>
+            <p><strong>Papá</strong></p>
+            <br/>
+            <img src="images/mujer.jpg" class="imagenes-vestimenta"/>
+            <br/><br/>
+            <p><strong>Mamá</strong></p>
+            <img src="images/padrino.jpg" class="imagenes-vestimenta"/>
+            <br/><br/>
+            <p><strong>Padrino</strong></p>
+        </center>
+    </section>
+
+    <section id="sexta">
+        <center>
+            <p class="titulos"><strong>Mesa de regalos: </strong></p>
+            <p>Tu presencia es mi mayor regalo, pero si deseas obsequiarme algo te adjunto una sugerencia</p>
+            <br/>
+            <img src="images/liverpool.png" class="imagenes-tiendas">
+            <img src="images/shein.png" class="imagenes-tiendas">
+            <img src="images/sears.png" class="imagenes-tiendas">
+        </center>
+    </section>
+   
+    <section id="septima">
+        <center>
+            <p class="titulos"><strong>Confirmación de asistencia: </strong></p>
+            <p>Confirmar Asistencia
+                Espero que puedas venir a compartir
+                conmigo este día inolvidable.
+                
+                Favor de confirmar tu presencia
+                un mes antes del evento.
+                
+                ¡Muchas Gracias!
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=&text=Hola, soy ........... y confirmo mi asistencia a los XV años de Lupis Garcia"><button class="botones" style="color:white;"><img src="images/whatsapp_blanco.png" class="whats-confirmacion">Confirmar con  mi mamá</button></a>
+                <a href="https://api.whatsapp.com/send?phone=&text=Hola, soy ........... y confirmo mi asistencia a los XV años de Lupis Garcia"><button class="botones" style="color:white;"><img src="images/whatsapp_blanco.png" class="whats-confirmacion">Confirmar con  mi Papá</button></a>
+
+                <!--Start Music buttuons-->
+                <br/><br/>
+                <button class="btn" id="botonDetener">Detener canción</button>
+                <button class="btn" id="botonReanudar">Escuchar canción</button>
+                <!--Finish Music buttuons--> 
+        </center>
+    </section>
+
+    <!--Start footer-->
+
+    <footer class="text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:rgb(168, 71, 87);">
+          Todos los derechos reservados
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!--End footer-->
+
+    <!--Start javascript code-->
+        <script>
+            
+            $( document ).ready(function() {
+                $('#myModal').modal('toggle')
+            });
+            
+            let boton = document.querySelector("#botonIniciar")
+            let detener = document.querySelector("#botonDetener")
+            let reanudar = document.querySelector("#botonReanudar")
+            let audioEtiqueta = document.querySelector("audio")
+
+            boton.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "music/musica-fondo.mp3")
+            audioEtiqueta.play()
+            })
+
+            detener.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "music/musica-fondo.mp3")
+            audioEtiqueta.pause()
+            detener.style.display = 'none';
+            reanudar.style.display = 'block';
+            })
+
+            reanudar.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "music/musica-fondo.mp3")
+            audioEtiqueta.play()
+            reanudar.style.display = 'none';
+            detener.style.display = 'block';
+            })
+
+            //Start time
+
+            /*document.addEventListener('DOMContentLoaded', () => { 
+
+            //===
+            // VARIABLES
+            //===
+            const DATE_TARGET = new Date('12/28/2023 7:57 PM');
+            // DOM for render
+            const SPAN_DAYS = document.querySelector('span#days');
+            const SPAN_HOURS = document.querySelector('span#hours');
+            const SPAN_MINUTES = document.querySelector('span#minutes');
+            const SPAN_SECONDS = document.querySelector('span#seconds');
+            // Milliseconds for the calculations
+            const MILLISECONDS_OF_A_SECOND = 1000;
+            const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+            const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+            const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+            //===
+            // FUNCTIONS
+            //===
+
+            //Method that updates the countdown and the sample
+            
+            function updateCountdown() {
+                // Calcs
+                const NOW = new Date()
+                const DURATION = DATE_TARGET - NOW;
+                const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+                const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+                const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+                const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+                // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+                // Render
+                SPAN_DAYS.textContent = REMAINING_DAYS;
+                SPAN_HOURS.textContent = REMAINING_HOURS;
+                SPAN_MINUTES.textContent = REMAINING_MINUTES;
+                SPAN_SECONDS.textContent = REMAINING_SECONDS;
+            }
+
+            //===
+            // INIT
+            //===
+            updateCountdown();
+            // Refresh every second
+            setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+            });*/
+
+            //End time
+
+        </script>
+    <!--End javascript code-->
+
+</body>
+</html>
